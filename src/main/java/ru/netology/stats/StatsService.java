@@ -1,7 +1,7 @@
 package ru.netology.stats;
 
 public class StatsService {
-    public long sumSale(long[] many) {
+    public long amountSalesPerYear(long[] many) {
         long sum = 0;
         for (long i = 0; i < many.length; i++) {
             sum = sum + many[(int) i];
@@ -10,7 +10,7 @@ public class StatsService {
     }
 
     public long averageAmountSaleMonth(long[] many) {
-        long sum = sumSale(many) / 12;
+        long sum = amountSalesPerYear(many) / 12;
         return sum;
     }
 

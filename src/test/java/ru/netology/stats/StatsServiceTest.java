@@ -12,7 +12,7 @@ public class StatsServiceTest {
         long[] many = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expectedSum = 180L;
-        long actualSum = service.sumSale(many);
+        long actualSum = service.amountSalesPerYear(many);
 
         Assertions.assertEquals(expectedSum, actualSum);
     }
